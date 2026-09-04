@@ -272,3 +272,16 @@ footer.site a{color:var(--gold-bright);text-decoration:none}
 .empty{text-align:center;padding:60px 0;color:var(--ink-soft);font-family:var(--mono);font-size:14px}
 .card.hide{display:none}
 @media(max-width:520px){.cgrid{grid-template-columns:1fr 1fr;gap:14px}}
+
+/* accountability (Community Dividers) variant */
+body.warn .page-head .eyebrow{color:#e97077}
+body.warn .page-head .punch .p .n{color:#e97077}
+body.warn .controls .count b{color:var(--scarlet)}
+body.warn .card .dist::before{background:var(--scarlet)}
+body.warn .card .ph{background:var(--scarlet-wash)}
+body.warn .card:hover{box-shadow:0 10px 30px rgba(191,43,52,.16)}
+.callout{margin-top:26px;border-left:3px solid var(--scarlet);background:rgba(191,43,52,.12);
+  border-radius:0 10px 10px 0;padding:18px 22px;max-width:70ch}
+.callout p{margin:0;color:#dbe2ea;font-size:15px;line-height:1.6}
+.callout .tag{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;
+  color:#e97077;margin:0 0 8px;font-weight:600}

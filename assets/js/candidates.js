@@ -8,6 +8,8 @@
   var empty = document.getElementById('empty');
   if (!grid) return;
 
+  var SRC = grid.getAttribute('data-src') || 'data/candidates.json';
+  var NOUN = grid.getAttribute('data-noun') || 'champions';
   var all = [];
 
   function norm(s) { return (s || '').toLowerCase(); }
@@ -18,7 +20,7 @@
       c.classList.toggle('hide', !show);
     });
     var n = list.length;
-    if (count) count.innerHTML = '<b>' + n + '</b> of ' + all.length + ' champions';
+    if (count) count.innerHTML = '<b>' + n + '</b> of ' + all.length + ' ' + NOUN;
     if (empty) empty.hidden = n !== 0;
   }
 
@@ -61,7 +63,7 @@
     return card;
   }
 
-  fetch('data/candidates.json')
+  fetch(SRC)
     .then(function (r) {
       if (!r.ok) throw new Error('HTTP ' + r.status);
       return r.json();

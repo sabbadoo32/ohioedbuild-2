@@ -3,40 +3,44 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Champions — Educate Ohio</title>
-<meta name="description" content="Meet the 43 pro-public-education champions running across Ohio to invest in our public schools.">
+<title>Community Dividers — Educate Ohio</title>
+<meta name="description" content="Politicians backed by out-of-state special interests who are pushing voucher expansion and privatization instead of funding Ohio's public schools.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Libre+Franklin:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<body class="warn">
 
 <header class="topbar static" id="topbar">
   <a class="brand" href="index.html">Educate Ohio<small>Ohioans United for Public Education</small></a>
   <nav>
     <a href="index.html" class="hide">Home</a>
-    <a href="dividers.html" class="hide">Dividers</a>
+    <a href="candidates.html" class="hide">Champions</a>
     <a href="tel:6147529777" class="call">&#9742; 614&#8209;752&#8209;9777</a>
     <a href="index.html#act">Get Updates</a>
   </nav>
 </header>
 
-<section class="page-head">
+<section class="page-head warn">
   <div class="wrap">
-    <p class="eyebrow">Community leaders working for Ohio students</p>
-    <h1>Meet the champions.</h1>
-    <p>All across the Buckeye State, these public&#8209;education champions are working with educators and parents to create a bright future for Ohio students — investing in our public schools so every child, regardless of race, background, or ZIP code, can reach their full potential.</p>
+    <p class="eyebrow">Stop the special interests dividing our communities</p>
+    <h1>Community dividers.</h1>
+    <p>Ohio students and families need leaders who will help them reach their potential and keep our schools safe. Instead, these politicians have been endorsed by out&#8209;of&#8209;state special interests and are driving a dangerous agenda — voucher expansion, school privatization, and schemes that line the pockets of pro&#8209;voucher backers instead of funding public schools.</p>
+    <div class="callout">
+      <p class="tag">Why it matters</p>
+      <p>Their agenda seeks to sow division and scapegoat our public schools and educators simply to perpetuate their own power. We can't trust them to stand up for our students' futures.</p>
+    </div>
     <div class="punch">
-      <div class="p"><div class="n">43</div><div class="l">Champions</div></div>
-      <div class="p"><div class="n">18</div><div class="l">Districts</div></div>
+      <div class="p"><div class="n">24</div><div class="l">Named</div></div>
+      <div class="p"><div class="n">90%</div><div class="l">Students they'd defund</div></div>
     </div>
   </div>
 </section>
 
 <div class="controls">
   <div class="wrap row">
-    <input type="search" id="search" placeholder="Search by name or district…" aria-label="Search champions">
+    <input type="search" id="search" placeholder="Search by name or district…" aria-label="Search list">
     <select id="district" aria-label="Filter by district">
       <option value="">All districts</option>
     </select>
@@ -46,8 +50,8 @@
 
 <section class="roster">
   <div class="wrap">
-    <div class="cgrid" id="cgrid" data-src="data/candidates.json" data-noun="champions"></div>
-    <p class="empty" id="empty" hidden>No champions match your filters.</p>
+    <div class="cgrid" id="cgrid" data-src="data/dividers.json" data-noun="individuals"></div>
+    <p class="empty" id="empty" hidden>No one matches your filters.</p>
   </div>
 </section>
 
