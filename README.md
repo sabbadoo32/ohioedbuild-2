@@ -54,5 +54,5 @@ photo into `assets/img/candidates/`, and push. No code changes needed.
 ## Notes / TODO
 
 - The **88 counties** figure and the Ohio map pin positions are illustrative placeholders — swap for verified data.
-- The email sign-up in the "Get updates" action is not yet wired to a provider (Netlify Forms, Mailchimp, etc.).
+- The email sign-up uses **Netlify Forms** (`data-netlify="true"`, submissions appear in the Netlify dashboard under Forms → "signup"; JS shows an inline success). No extra setup needed once deployed to Netlify; to route elsewhere (Mailchimp, etc.) swap the form `action`/handler.
 - Photography is licensed from Unsplash; the org logo is not yet placed in the header.

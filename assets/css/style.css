@@ -224,6 +224,21 @@ h2.big{font-family:var(--serif);font-weight:600;font-size:clamp(30px,5vw,56px);l
 .act .t{font-family:var(--serif);font-weight:600;font-size:22px}
 .act .s{font-size:13.5px;color:#dbe2ea}
 @media(max-width:720px){.act-cards{grid-template-columns:1fr}}
+/* sign-up form */
+.signup-form{margin-top:22px;background:rgba(255,255,255,.08);backdrop-filter:blur(4px);
+  border:1px solid rgba(255,255,255,.2);border-radius:12px;padding:22px}
+.signup-form .frow{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.signup-form .frow2{display:grid;grid-template-columns:1fr auto;gap:12px;margin-top:12px}
+.signup-form input{font-family:var(--sans);font-size:15px;padding:13px 15px;border-radius:6px;
+  border:1px solid transparent;background:#fff;color:var(--ink);min-width:0}
+.signup-form input::placeholder{color:#8a94a3}
+.signup-form button{white-space:nowrap}
+.signup-form .fine{font-family:var(--mono);font-size:10.5px;color:#cdd5df;margin:12px 0 0;letter-spacing:.03em}
+.signup-form .hp{position:absolute;left:-9999px}
+.form-msg{margin-top:14px;font-family:var(--mono);font-size:13px;letter-spacing:.02em;
+  color:var(--gold-bright);display:none}
+.form-msg.show{display:block}
+@media(max-width:640px){.signup-form .frow,.signup-form .frow2{grid-template-columns:1fr}}
 
 /* ---------- footer ---------- */
 footer.site{background:var(--ink-deep);color:#9cabbd;padding:54px 0 46px;font-size:13.5px}

@@ -188,7 +188,7 @@
           <span class="t">Call your legislator</span>
           <span class="s">Dial 614&#8209;752&#8209;9777 and tell them to fund public schools.</span>
         </a>
-        <a class="act" href="#act">
+        <a class="act" href="#getform">
           <span class="k">02 — This week</span>
           <span class="t">Get the updates</span>
           <span class="s">We'll tell you when your voice matters most.</span>
@@ -199,6 +199,22 @@
           <span class="s">Find the pro&#8209;public&#8209;education champions on your ballot.</span>
         </a>
       </div>
+
+      <form class="signup-form" id="getform" name="signup" method="POST"
+            data-netlify="true" netlify-honeypot="bot-field" action="/?subscribed=1">
+        <input type="hidden" name="form-name" value="signup">
+        <p class="hp"><label>Don't fill this out if you're human: <input name="bot-field"></label></p>
+        <div class="frow">
+          <input type="text" name="first_name" placeholder="First name" aria-label="First name" autocomplete="given-name">
+          <input type="text" name="zip" placeholder="ZIP code" aria-label="ZIP code" inputmode="numeric" autocomplete="postal-code">
+        </div>
+        <div class="frow2">
+          <input type="email" name="email" placeholder="Email address" aria-label="Email address" autocomplete="email" required>
+          <button class="btn gold" type="submit">Sign me up &#9656;</button>
+        </div>
+        <p class="fine">No spam. Unsubscribe anytime. We never sell your data.</p>
+        <p class="form-msg" id="formMsg" role="status">Thanks — you're on the list. We'll be in touch.</p>
+      </form>
     </div>
   </section>
 </main>

@@ -50,6 +50,27 @@
     counters.forEach(function (el) { el.firstChild.nodeValue = el.getAttribute('data-count'); });
   }
 
+  /* --- sign-up: enhance Netlify form with inline success (still works without JS) --- */
+  var form = document.getElementById('getform');
+  var msg = document.getElementById('formMsg');
+  if (form) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var data = new FormData(form);
+      var body = new URLSearchParams(data).toString();
+      fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: body })
+        .then(function () {
+          form.querySelector('.frow').hidden = true;
+          form.querySelector('.frow2').hidden = true;
+          var fine = form.querySelector('.fine'); if (fine) fine.hidden = true;
+          if (msg) msg.classList.add('show');
+        })
+        .catch(function () {
+          if (msg) { msg.textContent = 'Something went wrong — please try again.'; msg.classList.add('show'); }
+        });
+    });
+  }
+
   /* --- lightweight parallax on [data-parallax] (skip on touch / reduced motion) --- */
   var isTouch = window.matchMedia && window.matchMedia('(hover:none)').matches;
   if (!reduce && !isTouch) {
