@@ -63,7 +63,26 @@ a{color:inherit}
 .topbar nav a:hover{opacity:1}
 .topbar .call{color:var(--gold-bright);font-weight:600}
 .topbar.solid .call,.topbar.static .call{color:var(--gold)}
-@media(max-width:760px){.topbar nav a.hide{display:none}}
+/* hamburger */
+.menu-toggle{display:none;background:none;border:0;cursor:pointer;width:30px;height:30px;padding:0;
+  position:relative;color:inherit;flex:none}
+.menu-toggle span,.menu-toggle span::before,.menu-toggle span::after{position:absolute;left:4px;right:4px;
+  height:2px;background:currentColor;border-radius:2px;transition:transform .25s ease,opacity .2s ease}
+.menu-toggle span{top:14px}
+.menu-toggle span::before{content:"";top:-7px}
+.menu-toggle span::after{content:"";top:7px}
+.menu-toggle[aria-expanded="true"] span{background:transparent}
+.menu-toggle[aria-expanded="true"] span::before{top:0;transform:rotate(45deg)}
+.menu-toggle[aria-expanded="true"] span::after{top:0;transform:rotate(-45deg)}
+@media(max-width:760px){
+  .menu-toggle{display:inline-flex;align-items:center;justify-content:center}
+  .topbar .brand small{display:none}
+  .topbar nav{position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;
+    background:var(--paper);border-bottom:1px solid var(--line);padding:6px 0;display:none}
+  .topbar nav.open{display:flex}
+  .topbar nav a,.topbar nav a.hide{display:block;padding:14px 30px;opacity:1;color:var(--ink)}
+  .topbar nav a.call{color:var(--gold)}
+}
 
 /* ---------- image wash helper ---------- */
 .figduo{position:relative;overflow:hidden;background:var(--ink-deep)}

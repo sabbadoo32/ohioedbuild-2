@@ -14,6 +14,22 @@
     window.addEventListener('scroll', onScroll, { passive: true });
   }
 
+  /* --- mobile nav toggle --- */
+  var mt = document.getElementById('menuToggle');
+  var navEl = document.getElementById('nav');
+  if (mt && navEl) {
+    mt.addEventListener('click', function () {
+      var open = navEl.classList.toggle('open');
+      mt.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    navEl.addEventListener('click', function (e) {
+      if (e.target.closest('a')) {
+        navEl.classList.remove('open');
+        mt.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
+
   /* --- reveal on scroll (never hide anything unless we can observe it) --- */
   if (!reduce && 'IntersectionObserver' in window) {
     document.documentElement.classList.add('js');
