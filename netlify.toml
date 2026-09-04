@@ -1,0 +1,19 @@
+# Netlify configuration — Educate Ohio
+# Static site, no build step. Netlify publishes the repo root and
+# auto-deploys on every push to the connected branch (continuous deployment).
+
+[build]
+  publish = "."
+  command = ""
+
+# Long-cache the fingerprint-free static assets. Adjust if you add hashing.
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"

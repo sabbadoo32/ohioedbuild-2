@@ -1,0 +1,260 @@
+[
+  {
+    "name": "Alex Argo",
+    "district": "Lakota Local School District",
+    "photo": "assets/img/candidates/alex-argo.jpg",
+    "slug": "alex-argo"
+  },
+  {
+    "name": "Kelly Casper",
+    "district": "Lakota Local School District",
+    "photo": "assets/img/candidates/kelly-casper.jpg",
+    "slug": "kelly-casper"
+  },
+  {
+    "name": "James “Jim” Rudy",
+    "district": "West Clermont School District",
+    "photo": "assets/img/candidates/james-jim-rudy.jpg",
+    "slug": "james-jim-rudy"
+  },
+  {
+    "name": "Ryan Patton",
+    "district": "West Clermont School District",
+    "photo": "assets/img/candidates/ryan-patton.jpg",
+    "slug": "ryan-patton"
+  },
+  {
+    "name": "Michael Chumley",
+    "district": "West Clermont School District",
+    "photo": "assets/img/candidates/michael-chumley.jpg",
+    "slug": "michael-chumley"
+  },
+  {
+    "name": "Dan Heintz",
+    "district": "Cleveland Heights/University Heights School District",
+    "photo": "assets/img/candidates/dan-heintz.jpg",
+    "slug": "dan-heintz"
+  },
+  {
+    "name": "Adria Catanese",
+    "district": "Brecksville-Broadview Heights School District",
+    "photo": "assets/img/candidates/adria-catanese.jpg",
+    "slug": "adria-catanese"
+  },
+  {
+    "name": "Tish Kwiatkowski",
+    "district": "Brecksville-Broadview Heights School District",
+    "photo": "assets/img/candidates/tish-kwiatkowski.jpg",
+    "slug": "tish-kwiatkowski"
+  },
+  {
+    "name": "Michelle Bauer",
+    "district": "North Royalton School District",
+    "photo": "assets/img/candidates/michelle-bauer.jpg",
+    "slug": "michelle-bauer"
+  },
+  {
+    "name": "Bridget Wu",
+    "district": "North Royalton School District",
+    "photo": "assets/img/candidates/bridget-wu.jpg",
+    "slug": "bridget-wu"
+  },
+  {
+    "name": "Kevin Daberkow",
+    "district": "Olentangy School District",
+    "photo": "assets/img/candidates/kevin-daberkow.jpg",
+    "slug": "kevin-daberkow"
+  },
+  {
+    "name": "Brandon Lester",
+    "district": "Olentangy School District",
+    "photo": "assets/img/candidates/brandon-lester.jpg",
+    "slug": "brandon-lester"
+  },
+  {
+    "name": "Kara Coates",
+    "district": "Gahanna-Jefferson School District",
+    "photo": "assets/img/candidates/kara-coates.jpg",
+    "slug": "kara-coates"
+  },
+  {
+    "name": "Dion Manley",
+    "district": "Gahanna-Jefferson School District",
+    "photo": "assets/img/candidates/dion-manley.jpg",
+    "slug": "dion-manley"
+  },
+  {
+    "name": "Megan Dimmerling",
+    "district": "Gahanna-Jefferson School District",
+    "photo": "assets/img/candidates/megan-dimmerling.jpg",
+    "slug": "megan-dimmerling"
+  },
+  {
+    "name": "Sue Horn",
+    "district": "Gahanna-Jefferson School District",
+    "photo": "assets/img/candidates/sue-horn.jpg",
+    "slug": "sue-horn"
+  },
+  {
+    "name": "Antoinette Miranda",
+    "district": "Columbus School District",
+    "photo": "assets/img/candidates/antoinette-miranda.jpg",
+    "slug": "antoinette-miranda"
+  },
+  {
+    "name": "Patrick Katzenmeyer",
+    "district": "Columbus School District",
+    "photo": "assets/img/candidates/patrick-katzenmeyer.jpg",
+    "slug": "patrick-katzenmeyer"
+  },
+  {
+    "name": "Jermaine Kennedy",
+    "district": "Columbus School District",
+    "photo": "assets/img/candidates/jermaine-kennedy.jpg",
+    "slug": "jermaine-kennedy"
+  },
+  {
+    "name": "Jennifer Marietta",
+    "district": "Xenia School District",
+    "photo": "assets/img/candidates/jennifer-marietta.jpg",
+    "slug": "jennifer-marietta"
+  },
+  {
+    "name": "Jeremy Ward",
+    "district": "Forest Hills School District",
+    "photo": "assets/img/candidates/jeremy-ward.jpg",
+    "slug": "jeremy-ward"
+  },
+  {
+    "name": "Erin Walczewski",
+    "district": "Forest Hills School District",
+    "photo": "assets/img/candidates/erin-walczewski.jpg",
+    "slug": "erin-walczewski"
+  },
+  {
+    "name": "Jeff Nye",
+    "district": "Forest Hills School District",
+    "photo": "assets/img/candidates/jeff-nye.jpg",
+    "slug": "jeff-nye"
+  },
+  {
+    "name": "Rich Haffey",
+    "district": "Oak Hills School District",
+    "photo": "assets/img/candidates/rich-haffey.jpg",
+    "slug": "rich-haffey"
+  },
+  {
+    "name": "Shane Krugler",
+    "district": "Oak Hills School District",
+    "photo": "assets/img/candidates/shane-krugler.jpg",
+    "slug": "shane-krugler"
+  },
+  {
+    "name": "Sara Bitter",
+    "district": "Sycamore School District",
+    "photo": "assets/img/candidates/sara-bitter.jpg",
+    "slug": "sara-bitter"
+  },
+  {
+    "name": "Margaret Cook",
+    "district": "Mentor School District",
+    "photo": "assets/img/candidates/margaret-cook.jpg",
+    "slug": "margaret-cook"
+  },
+  {
+    "name": "Daniel Hardesty",
+    "district": "Mentor School District",
+    "photo": "assets/img/candidates/daniel-hardesty.jpg",
+    "slug": "daniel-hardesty"
+  },
+  {
+    "name": "Robert Haag",
+    "district": "Mentor School District",
+    "photo": "assets/img/candidates/robert-haag.jpg",
+    "slug": "robert-haag"
+  },
+  {
+    "name": "Belinda Glavic Grassi",
+    "district": "Riverside School District",
+    "photo": "assets/img/candidates/belinda-glavic-grassi.jpg",
+    "slug": "belinda-glavic-grassi"
+  },
+  {
+    "name": "Joseph Audino",
+    "district": "Riverside School District",
+    "photo": "assets/img/candidates/joseph-audino.jpg",
+    "slug": "joseph-audino"
+  },
+  {
+    "name": "Jimmielee Vires",
+    "district": "Riverside School District",
+    "photo": "assets/img/candidates/jimmielee-vires.jpg",
+    "slug": "jimmielee-vires"
+  },
+  {
+    "name": "Jeanne Pritchard",
+    "district": "Medina School District",
+    "photo": "assets/img/candidates/jeanne-pritchard.jpg",
+    "slug": "jeanne-pritchard"
+  },
+  {
+    "name": "Aaron Hair",
+    "district": "Medina School District",
+    "photo": "assets/img/candidates/aaron-hair.jpg",
+    "slug": "aaron-hair"
+  },
+  {
+    "name": "Victoria Druley",
+    "district": "Medina School District",
+    "photo": "assets/img/candidates/victoria-druley.jpg",
+    "slug": "victoria-druley"
+  },
+  {
+    "name": "Chris Amsler",
+    "district": "Miamisburg School District",
+    "photo": "assets/img/candidates/chris-amsler.jpg",
+    "slug": "chris-amsler"
+  },
+  {
+    "name": "Shelbi Nunery",
+    "district": "Miamisburg School District",
+    "photo": "assets/img/candidates/shelbi-nunery.jpg",
+    "slug": "shelbi-nunery"
+  },
+  {
+    "name": "Ann Niess",
+    "district": "Miamisburg School District",
+    "photo": "assets/img/candidates/ann-niess.jpg",
+    "slug": "ann-niess"
+  },
+  {
+    "name": "Jessi Ellis-Alvarez",
+    "district": "Lebanon School District",
+    "photo": "assets/img/candidates/jessi-ellis-alvarez.jpg",
+    "slug": "jessi-ellis-alvarez"
+  },
+  {
+    "name": "Ian McPherson",
+    "district": "Lebanon School District",
+    "photo": "assets/img/candidates/ian-mcpherson.jpg",
+    "slug": "ian-mcpherson"
+  },
+  {
+    "name": "Esther Banta Larson",
+    "district": "Lebanon School District",
+    "photo": "assets/img/candidates/esther-banta-larson.jpg",
+    "slug": "esther-banta-larson"
+  },
+  {
+    "name": "David Whiting",
+    "district": "Little Miami School District",
+    "photo": "assets/img/candidates/david-whiting.jpg",
+    "slug": "david-whiting"
+  },
+  {
+    "name": "Bobbie Grice",
+    "district": "Little Miami School District",
+    "photo": "assets/img/candidates/bobbie-grice.jpg",
+    "slug": "bobbie-grice"
+  }
+]
