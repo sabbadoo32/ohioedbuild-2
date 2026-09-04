@@ -53,10 +53,24 @@ a{color:inherit}
   border-bottom-color:var(--line);color:var(--ink)}
 .topbar.static{position:sticky;background:color-mix(in srgb,var(--paper) 90%,transparent);
   backdrop-filter:blur(10px);border-bottom-color:var(--line);color:var(--ink)}
-.topbar .brand{font-family:var(--serif);font-weight:600;font-size:20px;letter-spacing:.01em;
-  text-decoration:none;margin-right:auto;line-height:1}
-.topbar .brand small{display:block;font-family:var(--mono);font-size:9px;letter-spacing:.16em;
-  font-weight:500;opacity:.8;margin-top:4px;text-transform:uppercase}
+.topbar .brand{display:flex;align-items:center;text-decoration:none;margin-right:auto;line-height:0}
+.topbar .brand img{height:46px;width:auto;display:block}
+/* logo swap: white over the dark/transparent hero bar, color on the light solid bar */
+.topbar .brand .logo-color{display:none}
+.topbar .brand .logo-white{display:block}
+.topbar.solid .brand .logo-white,.topbar.static .brand .logo-white{display:none}
+.topbar.solid .brand .logo-color,.topbar.static .brand .logo-color{display:block}
+/* in dark theme the solid/static bar is dark too, so keep the white mark there */
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]) .topbar.solid .brand .logo-white,
+  :root:not([data-theme="light"]) .topbar.static .brand .logo-white{display:block}
+  :root:not([data-theme="light"]) .topbar.solid .brand .logo-color,
+  :root:not([data-theme="light"]) .topbar.static .brand .logo-color{display:none}}
+:root[data-theme="dark"] .topbar.solid .brand .logo-white,
+:root[data-theme="dark"] .topbar.static .brand .logo-white{display:block}
+:root[data-theme="dark"] .topbar.solid .brand .logo-color,
+:root[data-theme="dark"] .topbar.static .brand .logo-color{display:none}
+@media(max-width:760px){.topbar .brand img{height:40px}}
 .topbar nav{display:flex;align-items:center;gap:22px;font-family:var(--mono);font-size:12px;
   letter-spacing:.08em;text-transform:uppercase}
 .topbar nav a{text-decoration:none;opacity:.9}
