@@ -55,4 +55,5 @@ photo into `assets/img/candidates/`, and push. No code changes needed.
 
 - The **88 counties** figure and the Ohio map pin positions are illustrative placeholders — swap for verified data.
 - The email sign-up uses **Netlify Forms** (`data-netlify="true"`, submissions appear in the Netlify dashboard under Forms → "signup"; JS shows an inline success). No extra setup needed once deployed to Netlify; to route elsewhere (Mailchimp, etc.) swap the form `action`/handler.
-- Photography is licensed from Unsplash; the org logo is not yet placed in the header.
+- Photography is licensed from Unsplash. The org logo is in the header (white/color swap by theme + scroll state).
+- **Link preview (Open Graph) image**: `assets/img/og/og-cover.jpg` (1200×630), referenced by `og:image`/`twitter:image` on every page. To regenerate, render an HTML card at 1200×630 with headless Chrome and re-export. Update the absolute URLs in the `<head>` meta tags if the domain changes from `ohioedbuild2.netlify.app`.
