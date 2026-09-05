@@ -293,8 +293,8 @@ footer.site a{color:var(--gold-bright);text-decoration:none}
 .gp-wheel{flex:none;width:46px;height:46px;border-radius:50%;overflow:hidden;
   border:2px solid var(--gold);background:var(--ink-deep)}
 .gp-wheel img{width:100%;height:100%;object-fit:cover;display:block;transform-origin:center;
-  animation:gp-spin 3.5s linear infinite reverse}
-@keyframes gp-spin{to{transform:rotate(360deg)}}
+  animation:gp-cackle 2.4s ease-in-out infinite}
+@keyframes gp-cackle{0%,100%{transform:rotate(-4deg) scale(1)}50%{transform:rotate(4deg) scale(1.05)}}
 .gp-text{display:flex;flex-direction:column;gap:2px;min-width:0}
 .gp-text strong{font-family:var(--serif);font-weight:600;font-size:16px;line-height:1.2}
 .gp-text span{font-size:13px;color:#c2ccd8}
