@@ -282,6 +282,39 @@ footer.site .addr{font-family:var(--mono);font-size:12px;line-height:1.9;text-al
 footer.site a{color:var(--gold-bright);text-decoration:none}
 @media(max-width:600px){footer.site .addr{text-align:left}}
 
+/* ---------- game promo panel (slides up after 5s) ---------- */
+.game-promo{position:fixed;left:0;right:0;bottom:0;z-index:70;transform:translateY(115%);
+  visibility:hidden;transition:transform .55s cubic-bezier(.2,.85,.25,1),visibility 0s linear .55s;
+  will-change:transform}
+.game-promo.show{transform:translateY(0);visibility:visible;transition:transform .55s cubic-bezier(.2,.85,.25,1)}
+.gp-inner{max-width:var(--maxw);margin:0 auto;display:flex;align-items:center;gap:18px;
+  background:var(--ink-deep);color:#fff;border-top:2px solid var(--gold);
+  box-shadow:0 -10px 34px rgba(0,0,0,.34);padding:14px 22px}
+.gp-wheel{font-size:30px;line-height:1;flex:none;animation:gp-spin 4s linear infinite}
+@keyframes gp-spin{to{transform:rotate(360deg)}}
+.gp-text{display:flex;flex-direction:column;gap:2px;min-width:0}
+.gp-text strong{font-family:var(--serif);font-weight:600;font-size:16px;line-height:1.2}
+.gp-text span{font-size:13px;color:#c2ccd8}
+.gp-cta{margin-left:auto;flex:none;font-family:var(--mono);font-size:12.5px;letter-spacing:.06em;
+  text-transform:uppercase;font-weight:600;text-decoration:none;background:var(--gold-bright);color:#1a1205;
+  padding:12px 18px;border-radius:6px;transition:transform .15s ease,filter .2s}
+.gp-cta:hover{transform:translateY(-2px);filter:brightness(1.05)}
+.gp-close{flex:none;background:transparent;border:0;color:#9fb0c9;font-size:18px;line-height:1;
+  cursor:pointer;padding:6px;border-radius:6px}
+.gp-close:hover{color:#fff}
+@media(max-width:640px){
+  .gp-inner{flex-wrap:wrap;gap:12px;padding:14px 16px}
+  .gp-text{flex:1 1 100%;order:2}
+  .gp-wheel{order:1}
+  .gp-close{order:1;margin-left:auto}
+  .gp-cta{order:3;flex:1 1 100%;margin-left:0;text-align:center}
+}
+@media(prefers-reduced-motion:reduce){
+  .game-promo{transition:visibility 0s}
+  .game-promo.show{transition:visibility 0s}
+  .gp-wheel{animation:none}
+}
+
 /* ============================================================
    Candidates page
    ============================================================ */

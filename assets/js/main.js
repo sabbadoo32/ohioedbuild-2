@@ -14,6 +14,23 @@
     window.addEventListener('scroll', onScroll, { passive: true });
   }
 
+  /* --- game promo: slide up after 5s on page, dismissible, remembered --- */
+  var promo = document.getElementById('gamePromo');
+  if (promo) {
+    var dismissed = false;
+    try { dismissed = localStorage.getItem('eo_promo_dismissed') === '1'; } catch (e) {}
+    if (!dismissed) {
+      setTimeout(function () { promo.classList.add('show'); }, 5000);
+    }
+    var gpClose = document.getElementById('gpClose');
+    if (gpClose) {
+      gpClose.addEventListener('click', function () {
+        promo.classList.remove('show');
+        try { localStorage.setItem('eo_promo_dismissed', '1'); } catch (e) {}
+      });
+    }
+  }
+
   /* --- mobile nav toggle --- */
   var mt = document.getElementById('menuToggle');
   var navEl = document.getElementById('nav');
